@@ -101,7 +101,7 @@ var menu_legth = $(".menu-items button").length;
 console.log(menu_legth)
     $(window).scroll(function () {
         scroll = $(window).scrollTop();
-        for (var i=0;i<menu_legth;i++){
+        for (var i=0;i<menu_legth-1;i++){
             var scroll_position = $("section[scroll="+i+"]").offset().top
             if (scroll >= scroll_position-10) {
                 $("button[scroll="+i+"]").addClass("active");
